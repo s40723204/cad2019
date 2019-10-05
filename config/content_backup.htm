@@ -14,7 +14,8 @@
 <p>cmsimde 的開發採用 Leo Editor, 開啟 cmsimde 目錄中的 cmsimde.leo 就可以進行程式修改, 結束後, 若要保留網際內容, 只要將 cmsimde 外部的內容倒回 up_dir 目錄中即可後續對 cmsimde 遠端倉儲進行改版.</p>
 <p>init.py 位於  up_dir 目錄, 可以設定 site_title 與 uwsgi 等變數.</p>
 <p></p>
-<h1>WEEK2</h1>
+<h1>WEEK2~9</h1>
+<h4><span>WEEK 2 </span></h4>
 <h4>使用github建立倉儲和開啟近端</h4>
 <p>1.至mde.tw 2019Fall電腦輔助設計實習下載2019fall可攜程式至隨身碟</p>
 <p>2.利用git config指令設定user name和email及proxy</p>
@@ -25,5 +26,16 @@
 <p>7.錄製操作影片</p>
 <p><a href="https://youtu.be/8rPCwZ-RVuk">https://youtu.be/8rPCwZ-RVuk</a></p>
 <p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/8rPCwZ-RVuk" width="560"></iframe></p>
+<p></p>
+<h4><span>WEEK 3</span></h4>
+<h4>編譯Slovespace</h4>
+<p>1.將 Y:\portablegit\bin\sh.exe 改名為 sh_rename_for_solvespace.exe</p>
+<p>2.查驗 git 版本在 2.13 以上，即可使用 git clone --recurse-submodules 指令取得所有子模組資料</p>
+<p>3.將CMakeLists line 713 and 714 前面加上 #</p>
+<p>4.手動進行 libpng.dll.a 的編譯，並且改名為 libpng_static.a 後放到Y槽的 lib 目錄</p>
+<p>5.回到 solvespace 目錄， 建立 build 目錄後進入 build 目錄，執行以下兩行程式</p>
+<p>cmake .. -G "MinGW Makefiles" -DCMAKE_BUILD_TYPE=Release<br/>mingw32-make</p>
+<p><a href="https://youtu.be/pi_DWE3nSlY">https://youtu.be/pi_DWE3nSlY</a></p>
+<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/pi_DWE3nSlY" width="560"></iframe></p>
 <p></p>
 <p></p>
