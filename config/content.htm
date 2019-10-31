@@ -78,9 +78,15 @@
 <p><span></span></p>
 <p></p>
 <h4><span>新增啟動與停止按鈕</span></h4>
-<p><span>1.  已知可利用 Python remote API 啟動與停止 simulation</span></p>
-<p><span>2.  在上述架構下新增兩按鈕，可以啟動或停止所連線的 V-rep 模擬</span></p>
-<p><span>3.  拍攝操作影片</span></p>
+<p><span>1.  首先開啟 wed_vrep2 資料夾裡tempate資料夾的controls進編輯器</span></p>
+<p><span>2.  利用原有按鈕的程式進行複製修改，新增啟動及停止的按鈕</span></p>
+<p><span>3. 接著拉wed_vrep2 資料夾裡的 vrep_linefollower.py檔進編輯器</span></p>
+<p><span>4. 在 def to direction 下加上 if direction == 'start': 後打上vrep.simxStartSimulation(self.clientID, vrep.simx_opmode_oneshot)  定義開始按鈕</span></p>
+<p><span>5. 接著打上  elif direction == 'stop':<br/> vrep.simxStopSimulation(self.clientID, vrep.simx_opmode_oneshot) 定義停止按鈕</span></p>
+<p><span>6.  後續打上else :  並排列好順序</span></p>
+<p><span>7. 利用 app.py 開啟 localhost:5000 </span></p>
+<p><span>8. 打開vrep 導入雙輪車，利用   localhost:5000  進行開始與停止操控</span></p>
+<p><span>9.  <span>錄製操作影片</span></span></p>
 <h2>week10-14</h2>
 <h2>week15-18</h2>
 <p><span></span></p>
