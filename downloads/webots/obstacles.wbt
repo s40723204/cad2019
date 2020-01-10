@@ -1,0 +1,91 @@
+#VRML_SIM R2019b utf8
+WorldInfo {
+  basicTimeStep 16
+}
+Viewpoint {
+  orientation -0.5230040665008749 0.809519893672411 0.2667288664021141 1.1011035134065126
+  position 1.4305273863231487 1.5009430857392831 1.4913443272106774
+}
+DEF wall_1 Solid {
+  translation 0 0.05 0.5
+  children [
+    Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry DEF wall Box {
+        size 1 0.1 0.02
+      }
+    }
+  ]
+  name "solid(1)"
+  boundingObject USE wall
+}
+DEF wall_2 Solid {
+  translation 0 0.05 0.5
+  children [
+    Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry DEF wall Box {
+        size 1 0.1 0.02
+      }
+    }
+  ]
+  name "solid(2)"
+  boundingObject USE wall
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+Floor {
+  size 1 1
+}
+WoodenBox {
+  translation -0.261789 0.05 0.252523
+  name "wooden box(2)"
+  size 0.1 0.1 0.1
+}
+E-puck {
+  hidden position_0_0 498.6858456779424
+  hidden position_0_1 686.2192805241945
+  hidden rotation_1 1 0 0 3.9689788964245363
+  hidden rotation_2 1 0 0 4.931103265560052
+  translation -0.31179122136481924 -3.0093872788938478e-05 0.0801807393208378
+  rotation -0.9999998153427646 0.000466306185894762 0.0003897088371090093 -0.0029292499904961973
+  controller "<extern>"
+}
+Solid {
+  translation -0.3039237255170651 0.0967126365323049 -0.180902262986212
+  rotation 0.4248658828429069 0.8388566407297069 -0.34030650581466865 2.342640620811708
+  children [
+    Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry DEF BALL_GEOMETRY Sphere {
+        radius 0.05
+        subdivision 2
+      }
+    }
+  ]
+  boundingObject USE BALL_GEOMETRY
+  physics Physics {
+  }
+  linearVelocity -0.10568749376953111 1.5708640911308292e-08 -0.028277472765271882
+  angularVelocity -0.2827747276527188 1.1003167856491856 1.056874937695311
+}
+WoodenBox {
+  translation 0.0570186 0.05 0.319786
+  name "wooden box(1)"
+  size 0.1 0.1 0.1
+}
+WoodenBox {
+  translation -0.272334 0.05 -0.00675348
+  size 0.1 0.1 0.1
+}
